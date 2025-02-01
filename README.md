@@ -4,10 +4,6 @@
 
 **Exclusion-blocker** is a simple Windows kernel-mode driver that prevents modifications to registry keys related to Windows Defender exclusions. This effectively blocks attempts to exclude specific files or directories from Defender scans — a technique frequently used by malware authors to bypass detection.
 
-## How It Works
-
-Exclusion-blocker hooks into the Windows registry filtering mechanism and monitors attempts to modify Defender's exclusion-related registry keys. When such an attempt is detected, it is blocked before the change is applied.
-
 ## Registry Keys Monitored
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths
